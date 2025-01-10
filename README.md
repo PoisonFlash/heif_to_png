@@ -9,10 +9,12 @@ python3 heif_to_png.py <dirpath> [-D | --delete]
 ```
 
 ### Arguments:
-  <dirpath>            Path to the directory containing HEIC files.
+* `<dirpath>`:
+Path to the directory containing HEIC files.
 
 ### Optional Flags:
-  -D, --delete         Delete the original HEIC files after conversion.
+* `-D`, `--delete`
+Delete the original HEIC files after conversion.
 
 ## Examples:
 Convert HEIC files without deleting originals:

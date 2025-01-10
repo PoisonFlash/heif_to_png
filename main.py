@@ -59,11 +59,6 @@ def print_usage_info():
     """
     print(usage_message)
 
-
-# if __name__ == '__main__':
-#     d = Path(r'/home/evgeny/Documents/Projects/heif_to_png/tests/test_imgs/')
-#     convert_all(d, delete_converted=True)
-
 if __name__ == "__main__":
     # Initialize the argument parser
     parser = argparse.ArgumentParser(add_help=False)  # Disable default help to customize behavior

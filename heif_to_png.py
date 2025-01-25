@@ -60,22 +60,21 @@ def print_usage_info():
     print(usage_message)
 
 
-# if __name__ == '__main__':
-#     d = Path(r'/home/evgeny/Documents/Projects/heif_to_png/tests/test_imgs/')
-#     convert_all(d, delete_converted=True)
-
 if __name__ == "__main__":
     # Initialize the argument parser
     parser = argparse.ArgumentParser(add_help=False)  # Disable default help to customize behavior
 
     # Positional argument for the directory path
-    parser.add_argument("dirpath", type=str, nargs='?', help="Path to the directory containing HEIC files")
+    parser.add_argument("dirpath", type=str, nargs='?',
+                        help="Path to the directory containing HEIC files")
 
     # Optional flag for deleting the original HEIC files
-    parser.add_argument("-D", "--delete", action="store_true", help="Delete the original HEIC files after conversion")
+    parser.add_argument("-D", "--delete", action="store_true",
+                        help="Delete the original HEIC files after conversion")
 
     # Add custom help options
-    parser.add_argument("-h", "--help", action="store_true", help="Show usage information and exit")
+    parser.add_argument("-h", "--help", action="store_true",
+                        help="Show usage information and exit")
 
     # Parse the arguments
     args = parser.parse_args()

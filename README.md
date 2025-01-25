@@ -1,8 +1,18 @@
 # This utility converts heif images in a given directory to png format.
 
 This script scans provided directory tree and converts all HEIC files to PNG.  
-/// Written by PoisonFlash, 2024-08-23.
- 
+/// Written by PoisonFlash, 2024-08-23. 
+
+## Installation
+
+[Optional, but recommended]
+Create and activate a virtual environment
+
+Install requirements:
+```cmd
+pip install -r requirements.txt
+```
+
 ## Usage:
 ```cmd
 python3 heif_to_png.py <dirpath> [-D | --delete]
